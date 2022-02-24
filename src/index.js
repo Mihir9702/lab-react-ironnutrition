@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './style-guide/App.example';
+import 'antd/dist/antd.css';
+import foodsJSON from './foods.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App foodsJSON={foodsJSON} />
   </React.StrictMode>,
   document.getElementById('root')
 );
